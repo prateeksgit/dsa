@@ -4,7 +4,7 @@ def dfs(graph,root):
     visited=set([root])
     stack=[root]
     while stack:
-        vertex=stack.pop()
+        vertex=stack.pop()#pop removes the value from end implementing the principle of LIFO in stack
         print(vertex)
         for neighbour in graph[vertex]:
             if neighbour not in visited:
